@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSurface"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbarSize="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dm_16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="?actionBarSize"
+            android:paddingBottom="?actionBarSize">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fragment_policy_icon_view"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginBottom="32dp"
+                app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay.Large"
+                app:srcCompat="@drawable/ic_app" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_policy_welcome_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:text="@string/welcome_to"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_policy_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/usage_policy_summary"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/primary_text_size" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_policy_accept_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="@dimen/dm_16dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingVertical="14dp"
+            android:background="?selectableItemBackground"
+            android:text="@string/accept_and_continue"
+            android:textAllCaps="false"
+            android:textColor="?colorOnSecondary"
+            android:textSize="@dimen/page_title_text_size"
+            app:cornerRadius="8dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

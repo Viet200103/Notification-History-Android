@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/item_status_bar_notification_group_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_notification_info_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/layout_notification_info_large_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="@dimen/small_text_size"
+                tools:text="Pushed at 20/10/20022" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_notification_info_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_notification_info_time"
+                android:layout_alignParentStart="true"
+                android:layout_marginVertical="2dp"
+                android:layout_toStartOf="@+id/layout_notification_info_large_icon"
+                android:gravity="center_vertical">
+
+                <include
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    layout="@layout/layout_small_icon_app"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/layout_notification_info_sub_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/layout_notification_info_large_icon"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="12sp"
+                    tools:text="Dogs and cats" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/layout_notification_info_large_icon"
+                android:layout_width="@dimen/large_icon_size"
+                android:layout_height="@dimen/large_icon_size"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:visibility="gone"
+                app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay.Circle"
+                tools:src="@mipmap/ic_launcher"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_notification_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_notification_info_header_container"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:layout_toStartOf="@+id/layout_notification_info_large_icon"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="@dimen/secondary_text_size"
+                android:textStyle="bold"
+                tools:text="Kết nối mạng wifi đang mở aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout_notification_info_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_notification_info_title"
+            android:layout_marginTop="8dp"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/secondary_text_size"
+            tools:text="I prefer the second approach this because you are going to refresh the background activity once the user logins. Also the whole experience will be faster since you don't have to wait for your background activity to load." />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout_notification_info_big_picture"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:layout_below="@+id/layout_notification_info_content_text"
+            android:layout_marginTop="14dp"
+            android:antialias="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:layout_height="252dp"
+            tools:src="@mipmap/ic_launcher"
+            tools:visibility="visible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</merge>

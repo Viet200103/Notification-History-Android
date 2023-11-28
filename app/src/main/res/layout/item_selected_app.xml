@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorSurface">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/item_app_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        app:measureWithLargestChild="true">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/item_app_ongoing_icon_view"
+            android:layout_width="@dimen/app_icon_size"
+            android:layout_height="@dimen/app_icon_size"
+            android:layout_gravity="center_vertical"
+            android:background="?colorOnSurfaceVariant"
+            app:contentPadding="4dp"
+            app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay"
+            tools:src="@mipmap/ic_launcher" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_app_ongoing_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            tools:text="@string/app_name"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/primary_text_size" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/item_app_ongoing_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            tools:checked="true"
+            android:src="@drawable/ic_more_vert" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorOnPrimaryVariant" format="reference|color"/>
+
+    <declare-styleable name="PasswordLayout">
+        <attr name="hint" format="reference|string"/>
+        <attr name="startIcon" format="reference"/>
+    </declare-styleable>
+</resources>

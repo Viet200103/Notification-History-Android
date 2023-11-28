@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notisave_white_500">#ffffff</color>
+    <color name="notisave_black_900">#000000</color>
+
+    <color name="colorPrimaryLight">#007F69</color>
+    <color name="colorPrimaryVariantLight">#00594a</color> <!--#232F34-->
+    <color name="colorOnPrimaryLight">@color/notisave_white_500</color>
+    <color name="colorOnPrimaryVariantLight">#B3FFFFFF</color>
+
+    <color name="colorSecondaryLight">#f9aa33</color>
+    <color name="colorSecondaryVariantLight">#f9be64</color>
+    <color name="colorOnSecondaryLight">@color/notisave_black_900</color>
+
+    <color name="colorTertiaryLight">#22223b</color>
+
+    <color name="colorBackgroundLight">#eef0f2</color>
+    <color name="colorOnBackgroundLight">@color/notisave_black_900</color>
+
+    <color name="colorSurfaceLight">@color/notisave_white_500</color>
+    <color name="colorOnSurfaceLight">@color/notisave_black_900</color>
+    <color name="colorOnSurfaceVariantLight">#1A000000</color>
+
+    <color name="colorErrorLight">#ff4c5d</color>
+    <color name="colorOnErrorLight">@color/notisave_black_900</color>
+
+    <color name="textColorPrimaryLight">#0D1E23</color>
+    <color name="textColorSecondaryLight">#990D1E23</color>
+    <color name="textColorHintLight">#4D0D1E23</color>
+    <color name="textColorHintVariantLight">#4DFFFFFF</color>
+
+    <color name="colorDisableLight">#9E9E9E</color>
+
+    <!-- Dark -->
+    <color name="colorPrimaryDark">#202C33</color>
+    <color name="colorPrimaryVariantDark">#202C33</color> <!--#232F34-->
+    <color name="colorOnPrimaryDark">#EFF0F1</color>
+    <color name="colorOnPrimaryVariantDark">#8696A0</color>
+
+    <color name="colorSecondaryDark">#029979</color>
+    <color name="colorSecondaryVariantDark">#005c4b</color>
+    <color name="colorOnSecondaryDark">#EFF0F1</color>
+
+    <color name="colorTertiaryDark">#0880AE</color>
+
+    <color name="colorBackgroundDark">#111B21</color>
+    <color name="colorOnBackgroundDark">@color/notisave_white_500</color>
+
+    <color name="colorSurfaceDark">#233138</color>
+    <color name="colorOnSurfaceDark">@color/notisave_white_500</color>
+    <color name="colorOnSurfaceVariantDark">#1AFFFFFF</color>
+    <color name="textColorHintVariantDark">#4D000000</color>
+
+    <color name="colorErrorDark">#CF7779</color>
+    <color name="colorOnErrorDark">@color/notisave_black_900</color>
+
+    <color name="textColorPrimaryDark">@color/notisave_white_500</color>
+    <color name="textColorSecondaryDark">#8696A0</color>
+    <color name="textColorHintDark">#8696A0</color>
+
+    <color name="colorDisableDark">#bdbdbd</color>
+
+
+</resources>

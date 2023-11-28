@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_recent_notification_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/background_notification_item"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_recent_notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/item_status_bar_notification_group_large_icon_view"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/small_text_size"
+            tools:text="20/10/20022" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/item_recent_notification_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_recent_notification_time"
+            android:layout_marginVertical="2dp"
+            android:layout_toStartOf="@+id/item_status_bar_notification_group_large_icon_view"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            app:measureWithLargestChild="true">
+
+            <include
+                layout="@layout/layout_small_icon_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_recent_notification_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/item_recent_notification_large_icon"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp"
+                tools:text="Dogs and cats" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/item_status_bar_notification_group_large_icon_view"
+            android:layout_width="@dimen/large_icon_size"
+            android:layout_height="@dimen/large_icon_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:contentPadding="-2dp"
+            app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay.Circle"
+            tools:src="@mipmap/ic_launcher"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_recent_notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/secondary_text_size"
+        android:textStyle="bold"
+        tools:text="Kết nối mạng wifi đang mở aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_recent_notification_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="@dimen/secondary_text_size"
+        tools:text="I prefer the second approach this because you are going to refresh the background activity once the user logins. Also the whole experience will be faster since you don't have to wait for your background activity to load." />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_recent_notification_count_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/background_more_button"
+        android:gravity="center"
+        android:minWidth="64dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/color_more_notification_button"
+        tools:text="123+" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

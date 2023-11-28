@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/menu_main_notification_manager"
+            android:icon="@drawable/ic_manage_history"
+            android:title="@string/notification_manager_title" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_main_group_support"
+        android:enabled="true">
+
+        <item
+            android:id="@+id/menu_main_setting"
+            android:icon="@drawable/ic_main_settings"
+            android:title="@string/setting" />
+
+        <item
+            android:id="@+id/menu_rate"
+            android:icon="@drawable/ic_main_rate_app"
+            android:title="@string/rate_app" />
+        
+        <item
+            android:id="@+id/menu_main_share"
+            android:icon="@drawable/ic_main_share"
+            android:title="@string/share_app" />
+
+        <item
+            android:id="@+id/menu_main_feedback"
+            android:icon="@drawable/ic_main_feedback"
+            android:title="@string/feedback" />
+
+
+        <item
+            android:id="@+id/menu_main_about"
+            android:icon="@drawable/ic_main_about"
+            android:title="@string/about" />
+    </group>
+
+</menu>

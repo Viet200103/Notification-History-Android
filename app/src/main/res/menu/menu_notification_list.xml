@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menu_notification_list_general">
+        <item
+            android:id="@+id/menu_message_support_add_group"
+            android:icon="@drawable/ic_add"
+            android:title="@string/add_to_category"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menu_notification_history_search"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search"
+            app:showAsAction="ifRoom|collapseActionView" />
+    </group>
+
+    <item
+        android:id="@+id/menu_notification_history_group_by"
+        android:icon="@drawable/ic_filter_list"
+        app:showAsAction="ifRoom"
+        android:title="@string/notification_group_by">
+        <menu>
+            <item
+                android:id="@+id/menu_notification_list_group_by_id"
+                android:icon="@drawable/ic_filter_group"
+                android:title="@string/notification_group_by_id" />
+
+            <item
+                android:id="@+id/menu_notification_list_group_by_app"
+                android:icon="@drawable/ic_filter_app"
+                android:title="@string/notification_group_by_app" />
+
+            <item
+                android:id="@+id/menu_notification_list_group_by_none"
+                android:icon="@drawable/ic_filter_none"
+                android:title="@string/notification_group_by_none" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_notification_list_sort_by"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom"
+        android:title="@string/notification_sort_by">
+        <menu>
+            <item
+                android:id="@+id/menu_notification_list_sort_by_desc"
+                android:icon="@drawable/ic_calendar_today"
+                android:title="@string/notification_sort_by_time_desc"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/menu_notification_list_sort_by_asc"
+                android:icon="@drawable/ic_calendar_today"
+                android:title="@string/notification_sort_by_time_asc"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+</menu>

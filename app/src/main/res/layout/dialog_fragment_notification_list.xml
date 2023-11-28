@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_fragment_notification_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="76dp" />
+
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_fragment_notification_list_close_button"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="@string/close"
+            android:textAllCaps="true"
+            android:textColor="?colorOnSecondary"
+            android:textSize="@dimen/primary_text_size"
+            app:backgroundTint="?colorSecondary"
+            app:cornerRadius="8dp" />
+
+        <include
+            android:visibility="invisible"
+            layout="@layout/selected_item_bar"/>
+    </FrameLayout>
+
+</FrameLayout>

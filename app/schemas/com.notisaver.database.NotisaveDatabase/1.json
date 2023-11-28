@@ -1,0 +1,412 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "20199f2a22e6fe823ca5b6ca1d32f41f",
+    "entities": [
+      {
+        "tableName": "Category",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`categoryId` TEXT NOT NULL, `name` TEXT NOT NULL, PRIMARY KEY(`categoryId`))",
+        "fields": [
+          {
+            "fieldPath": "categoryId",
+            "columnName": "categoryId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "categoryId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CategoryAppMetaDataCrossRef",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`categoryId` TEXT NOT NULL, `packageHashcode` TEXT NOT NULL, PRIMARY KEY(`categoryId`, `packageHashcode`), FOREIGN KEY(`categoryId`) REFERENCES `Category`(`categoryId`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`packageHashcode`) REFERENCES `AppMetaData`(`packageHashcode`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "categoryId",
+            "columnName": "categoryId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packageHashcode",
+            "columnName": "packageHashcode",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "categoryId",
+            "packageHashcode"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_CategoryAppMetaDataCrossRef_categoryId",
+            "unique": false,
+            "columnNames": [
+              "categoryId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CategoryAppMetaDataCrossRef_categoryId` ON `${TABLE_NAME}` (`categoryId`)"
+          },
+          {
+            "name": "index_CategoryAppMetaDataCrossRef_packageHashcode",
+            "unique": false,
+            "columnNames": [
+              "packageHashcode"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_CategoryAppMetaDataCrossRef_packageHashcode` ON `${TABLE_NAME}` (`packageHashcode`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Category",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "categoryId"
+            ],
+            "referencedColumns": [
+              "categoryId"
+            ]
+          },
+          {
+            "table": "AppMetaData",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "packageHashcode"
+            ],
+            "referencedColumns": [
+              "packageHashcode"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "AppMetaData",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`packageHashcode` TEXT NOT NULL, `packageName` TEXT NOT NULL, `isCleanable` INTEGER NOT NULL, `isTracking` INTEGER NOT NULL, `isOngoing` INTEGER NOT NULL, PRIMARY KEY(`packageHashcode`))",
+        "fields": [
+          {
+            "fieldPath": "packageHashcode",
+            "columnName": "packageHashcode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packageName",
+            "columnName": "packageName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCleanable",
+            "columnName": "isCleanable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isTracking",
+            "columnName": "isTracking",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isLogOnGoing",
+            "columnName": "isOngoing",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "packageHashcode"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_AppMetaData_packageName",
+            "unique": true,
+            "columnNames": [
+              "packageName"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_AppMetaData_packageName` ON `${TABLE_NAME}` (`packageName`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "ONotification",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`sbnKeyHashcode` TEXT NOT NULL, `timePost` INTEGER NOT NULL, `logId` TEXT NOT NULL, `title` TEXT, `contentText` TEXT, `subText` TEXT, `isLargeIcon` INTEGER NOT NULL, `isOnGoing` INTEGER NOT NULL, `isNew` INTEGER NOT NULL, `timeAdded` INTEGER NOT NULL, `packageHashcode` TEXT NOT NULL, PRIMARY KEY(`sbnKeyHashcode`, `timePost`), FOREIGN KEY(`packageHashcode`) REFERENCES `AppMetaData`(`packageHashcode`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "sbnKeyHashcode",
+            "columnName": "sbnKeyHashcode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timePost",
+            "columnName": "timePost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logId",
+            "columnName": "logId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contentText",
+            "columnName": "contentText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subText",
+            "columnName": "subText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isLargeIcon",
+            "columnName": "isLargeIcon",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isOnGoing",
+            "columnName": "isOnGoing",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isNew",
+            "columnName": "isNew",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeAdded",
+            "columnName": "timeAdded",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packageHashcode",
+            "columnName": "packageHashcode",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "sbnKeyHashcode",
+            "timePost"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_ONotification_packageHashcode",
+            "unique": false,
+            "columnNames": [
+              "packageHashcode"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_ONotification_packageHashcode` ON `${TABLE_NAME}` (`packageHashcode`)"
+          },
+          {
+            "name": "index_ONotification_logId",
+            "unique": true,
+            "columnNames": [
+              "logId"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_ONotification_logId` ON `${TABLE_NAME}` (`logId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "AppMetaData",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "packageHashcode"
+            ],
+            "referencedColumns": [
+              "packageHashcode"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "BaseNotificationStyle",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`styleId` TEXT NOT NULL, `bigContentTitle` TEXT, `summaryText` TEXT, `templateId` INTEGER NOT NULL, PRIMARY KEY(`styleId`), FOREIGN KEY(`styleId`) REFERENCES `ONotification`(`logId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "styleId",
+            "columnName": "styleId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bigContentTitle",
+            "columnName": "bigContentTitle",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "summaryText",
+            "columnName": "summaryText",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "templateId",
+            "columnName": "templateId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "styleId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "ONotification",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "styleId"
+            ],
+            "referencedColumns": [
+              "logId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "BigPictureNotificationStyle",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`styleId` TEXT NOT NULL, `isPicture` INTEGER NOT NULL, `isBigLargeIcon` INTEGER NOT NULL, PRIMARY KEY(`styleId`), FOREIGN KEY(`styleId`) REFERENCES `BaseNotificationStyle`(`styleId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "styleId",
+            "columnName": "styleId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPicture",
+            "columnName": "isPicture",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBigLargeIcon",
+            "columnName": "isBigLargeIcon",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "styleId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "BaseNotificationStyle",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "styleId"
+            ],
+            "referencedColumns": [
+              "styleId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "BigTextNotificationStyle",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`styleId` TEXT NOT NULL, `bigText` TEXT, PRIMARY KEY(`styleId`), FOREIGN KEY(`styleId`) REFERENCES `BaseNotificationStyle`(`styleId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "styleId",
+            "columnName": "styleId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bigText",
+            "columnName": "bigText",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "styleId"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "BaseNotificationStyle",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "styleId"
+            ],
+            "referencedColumns": [
+              "styleId"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [
+      {
+        "viewName": "AppTemplate",
+        "createSql": "CREATE VIEW `${VIEW_NAME}` AS SELECT a.packageHashcode as aPackageHashcode, count(o.packageHashcode) as nCount FROM appmetadata AS a LEFT JOIN ONotification AS o ON a.packageHashcode = o.packageHashcode  GROUP BY a.packageHashcode ORDER BY nCount DESC"
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '20199f2a22e6fe823ca5b6ca1d32f41f')"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_short_notification_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_short_notification"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_short_notification_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.6"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/small_text_size"
+        tools:text="16h" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_short_notification_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_2dp"
+        android:layout_toStartOf="@+id/item_short_notification_time_view"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/secondary_text_size"
+        android:textStyle="bold"
+        tools:text="Notisaver is running - Debug" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_short_notification_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_short_notification_title_view"
+        android:layout_marginTop="2dp"
+        android:alpha="0.6"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/secondary_text_size"
+        tools:text="Notisaver is running - Debug" />
+</androidx.appcompat.widget.LinearLayoutCompat>

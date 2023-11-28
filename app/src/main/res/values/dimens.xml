@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="primary_text_size">16sp</dimen>
+    <dimen name="secondary_text_size">14sp</dimen>
+    <dimen name="paragraph_text_size">14sp</dimen>
+    <dimen name="page_title_text_size">16sp</dimen>
+    <dimen name="page_title_text_size_2">18sp</dimen>
+    <dimen name="page_title_text_size_3">20sp</dimen>
+    <dimen name="notification_option_column">104dp</dimen>
+
+    <dimen name="large_icon_size">42dp</dimen>
+    <dimen name="app_icon_size">38dp</dimen>
+    <dimen name="app_icon_size_small">24dp</dimen>
+    <dimen name="token_icon_size">12dp</dimen>
+    <dimen name="line_spacing">4dp</dimen>
+
+    <dimen name="card_corner_small">4dp</dimen>
+    <dimen name="card_corner_large">8dp</dimen>
+
+    <dimen name="dm_16dp">16dp</dimen>
+    <dimen name="dm_2dp">2dp</dimen>
+</resources>

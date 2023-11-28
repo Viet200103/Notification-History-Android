@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_app_option_default_group"
+        android:visible="true">
+
+        <item
+            android:id="@+id/menu_app_option_item_open_app"
+            android:icon="@drawable/ic_options_open_in_new"
+            android:title="@string/option_open_app" />
+
+        <item
+            android:id="@+id/menu_app_option_item_open_setting"
+            android:icon="@drawable/ic_options_settings"
+            android:title="@string/option_open_setting" />
+
+        <item
+            android:id="@+id/menu_app_option_item_clear"
+            android:icon="@drawable/ic_option_delete"
+            android:title="@string/option_remove_notification" />
+
+        <item
+            android:id="@+id/menu_app_option_item_exclude"
+            android:icon="@drawable/ic_option_blur_off"
+            android:title="@string/option_exclude_app_short" />
+
+        <item
+            android:id="@+id/menu_app_option_item_include"
+            android:icon="@drawable/ic_option_blur_on"
+            android:title="@string/option_include_app_short" />
+    </group>
+
+    <group android:id="@+id/menu_app_option_other_group">
+
+        <item
+            android:id="@+id/menu_app_option_item_enable_log_ongoing"
+            android:title="@string/option_enable_log_ongoing" />
+
+        <item
+            android:id="@+id/menu_app_option_item_disable_log_ongoing"
+            android:title="@string/option_disable_log_ongoing" />
+
+        <item
+            android:id="@+id/menu_app_option_item_enable_cancel_when_push"
+            android:title="@string/option_enable_cancel_short" />
+
+        <item
+            android:id="@+id/menu_app_option_item_disable_cancel_when_push"
+            android:title="@string/option_disable_cancel" />
+
+        <item
+            android:id="@+id/menu_app_option_item_delete_app"
+            android:title="@string/option_delete_app" />
+    </group>
+</menu>

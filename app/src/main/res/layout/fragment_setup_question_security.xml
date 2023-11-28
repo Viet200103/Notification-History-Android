@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dm_16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_semi_expanded_bold"
+        android:text="@string/setup_your_security_question"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/setup_security_question_summary"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/primary_text_size" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_setup_question_security_question_view"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:boxBackgroundColor="?colorSurface"
+        app:boxCollapsedPaddingTop="8dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="?colorOnSurface">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/choose_your_question"
+            android:inputType="none"
+            android:labelFor="@id/fragment_setup_question_security_question_view"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_setup_question_security_answer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_16dp"
+        android:hint="@string/enter_your_answer"
+        app:boxBackgroundColor="?colorSurface"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:hintTextColor="?colorOnSurface">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_setup_question_security_warning_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm_16dp"
+        android:drawableTint="?colorError"
+        android:gravity="center"
+        android:text="@string/warning_answer_question_empty"
+        android:textColor="?colorError"
+        android:textSize="@dimen/paragraph_text_size"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_setup_question_security_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/color_start_button"
+        android:paddingVertical="14dp"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textColor="?colorOnSecondary"
+        android:textSize="@dimen/primary_text_size"
+        app:elevation="0dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

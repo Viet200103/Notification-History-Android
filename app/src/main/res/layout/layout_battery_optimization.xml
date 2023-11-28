@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSurface"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout_battery_optimization_back_button"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:padding="@dimen/dm_16dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            app:tint="?colorOnSurface" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dm_16dp"
+            android:text="@string/pre_battery_optimization"
+            android:textColor="?colorOnSurface"
+            android:textSize="@dimen/page_title_text_size_2"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dm_16dp"
+        android:layout_marginVertical="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/not_battery_optimization_status"
+            android:textColor="?colorOnSurface"
+            android:textSize="@dimen/primary_text_size"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout_battery_optimization_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/primary_text_size"
+            tools:text="disabled" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_battery_optimization_description_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm_16dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="?colorOnSurface"
+                android:textSize="@dimen/primary_text_size"
+                tools:text="@string/battery_optimization_explain"
+                tools:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/turn_on_battery_optimization"
+                android:textColor="?colorOnSurface"
+                android:textSize="@dimen/page_title_text_size_3" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/method_1"
+                android:textColor="?colorOnSurface"
+                android:textSize="@dimen/page_title_text_size_2" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_step_tutorial"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="?colorOnSecondary"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/open_details_setting"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="@dimen/page_title_text_size" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_battery_optimization_step_1_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/layout_battery_optimization_step_1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/background_step_tutorial"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="?colorOnSecondary"
+                        android:textSize="@dimen/primary_text_size"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/layout_battery_optimization_step_1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/layout_battery_optimization_step_1"
+                        android:text="@string/tap_battery"
+                        android:textColor="?colorOnSurface"
+                        android:textSize="@dimen/page_title_text_size" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_battery_optimization_step_1_title_layout"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tap_battery_note"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="@dimen/paragraph_text_size" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_battery_usage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dm_16dp"
+                tools:layout_height="250dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_step_tutorial"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="?colorOnSecondary"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/turn_on_unrestricted_mode"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="@dimen/page_title_text_size" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_battery_usage_unrestricted_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:layout_marginTop="@dimen/dm_16dp"
+                tools:layout_height="250dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/layout_battery_optimization_detail_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/app_detail_setting"
+                android:textColor="?colorOnSecondary"
+                app:backgroundTint="?colorSecondary" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/method_2"
+                android:textColor="?colorOnSurface"
+                android:textSize="@dimen/page_title_text_size_2" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_step_tutorial"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="?colorOnSecondary"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/open_battery_optimization"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="@dimen/page_title_text_size" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dm_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_step_tutorial"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="?colorOnSecondary"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/optimize_change_to_all"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="@dimen/page_title_text_size" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_not_optimized"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:layout_marginTop="8dp"
+                tools:layout_height="250dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_all_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="@dimen/dm_16dp"
+                tools:layout_height="250dp" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_step_tutorial"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="?colorOnSecondary"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/find_notisaver_app"
+                    android:textColor="?colorOnSurface"
+                    android:textSize="@dimen/page_title_text_size" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_find_notisaver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:layout_marginTop="@dimen/dm_16dp"
+                tools:layout_height="250dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_battery_optimization_image_dialog_unrestricted_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dm_16dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerInside"
+                tools:layout_height="250dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/layout_battery_optimization_battery_white_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/optimize_app_list"
+                android:textColor="?colorOnSecondary"
+                app:backgroundTint="?colorSecondary" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

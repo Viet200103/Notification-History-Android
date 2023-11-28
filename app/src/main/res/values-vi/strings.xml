@@ -1,0 +1,268 @@
+<resources>
+
+    <string name="app_name">Notisaver</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="search_hint">Tìm kiếm…</string>
+    <string name="app_version_title">Phiên bản ứng dụng</string>
+    <string name="cancel">Hủy</string>
+    <string name="close">Đóng</string>
+    <string name="ok">Đồng ý</string>
+    <string name="dismiss">Bỏ qua</string>hoạt
+    <string name="start">Bắt đầu</string>
+    <string name="selected">Đã chọn %1$d</string>
+
+    <string name="turn_on">Kích hoạt</string>
+    <string name="allow">Cho phép</string>
+    <string name="scan_app_device">Quét ứng dụng thiết bị</string>
+    <string name="scanning">Đang quét ứng dụng…</string>
+
+    <string name="password">Mật khẩu</string>
+    <string name="create">Khởi tạo</string>
+    <string name="confirm">Xác thực</string>
+    <string name="action_continue">Tiếp tục</string>
+    <string name="canceling">Đang hủy…</string>
+
+    <string name="process_delete_notification">Đang xử lý và xóa thông báo…</string>
+
+    <string name="retart_app">Vui lòng khởi động lại ứng dụng.</string>
+
+    <string name="empty_list">Trống</string>
+
+    <string name="all_app">Tất cả ứng dụng</string>
+
+    <string name="custom_content">(Nội dung tùy chỉnh của ứng dụng)</string>
+    <string name="loading_data">Đang tải dữ liệu</string>
+
+    <string name="welcome_to">Chào mừng đến với %1$s</string>
+    <string name="accept_and_continue">Chấp nhận &#x26; tiếp tục</string>
+
+    <string name="scan_fingerprint_description">Quét dấu vân tay của bạn</string>
+
+    <string name="notification_running_background">%1$s đang hoạt động</string>
+
+    <plurals name="count_notification">
+        <item quantity="other">%1$d thông báo</item>
+    </plurals>
+
+    <!--main menu-->
+    <string name="setting">Cài đặt</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="rate_app">Đánh giá</string>
+    <string name="about">Về ứng dụng</string>
+    <string name="share_app">Chia sẽ</string>
+    <string name="update_version">Kiểm tra cập nhật</string>
+    <!--main menu-->
+
+    <!--Main Option-->
+    <string name="notification_history">Lịch sử</string>
+    <string name="notification_history_title">Lịch sử thông báo</string>
+    <string name="notification_manager">Quản lý</string>
+    <string name="notification_message">Tin nhắn</string>
+    <string name="notification_manager_title">Quản lý thông báo</string>
+    <!--Main Option-->
+
+    <!--password-->
+    <string name="create_password">Thiết lập mật khẩu</string>
+    <string name="verify_password">Xác nhận mật khẩu</string>
+    <string name="forgotten_password">Quên mật khẩu</string>
+
+    <string name="password_length_warning">\u26A0 Mật khẩu của bạn ít nhất 6 chữ cái</string>
+    <string name="password_not_match">\u26A0 Mật khẩu không khớp</string>
+    <string name="password_wrong">\u26A0 Mật khẩu sai, vui lòng thử lại</string>
+
+    <string name="question_where_born">Bạn sinh ra ở đâu?</string>
+    <string name="question_father_name">Tên cha của bạn là gì?</string>
+    <string name="question_mother_name">Tên mẹ của bạn là gì?</string>
+    <string name="question_favorite_color">Màu sắc ưa thích của bạn là gì?</string>
+    <string name="question_favorite_number">Số yêu thích của bạn là gì?</string>
+    <string name="question_date_birthday">Ngày nào là ngày sinh nhật của bạn?</string>
+    <string name="question_hometown">Quê hương bạn ở đâu?</string>
+
+    <string name="setup_your_password">Thiết lập mật khẩu của bạn</string>
+    <string name="setup_your_password_summary">Bạn nên đặt câu hỏi bảo mật sau khi thiết lập mật khẩu</string>
+
+    <string name="retrieve_password">Lấy lại mật khẩu</string>
+    <string name="verify_your_security_question">Xác minh câu hỏi bảo mật của bạn</string>
+
+    <string name="warning_skip_security_question">Dữ liệu của bạn có thể bị mất nếu bạn quên mật khẩu.</string>
+
+    <string name="setup_security_question_summary">Dùng để lấy lại mật khẩu của bạn</string>
+    <string name="choose_your_question">Chọn câu hỏi của bạn</string>
+    <string name="enter_your_answer">Nhập câu trả lời của bạn</string>
+    <string name="warning_answer_question_empty">\u26A0 Câu trả lời của bạn không được để trống</string>
+    <string name="setup_your_security_question">Thiết lập câu hỏi bảo mật của bạn</string>
+
+    <string name="device_not_support_fingerprint">Thiết bị của bạn không hỗ trợ vân tay</string>
+    <string name="let_setup_your_password">Hãy thiết lập mật khẩu của bạn</string>
+    <string name="use_password">Sử dụng mật khẩu</string>
+    <string name="fingerprint_authentication">Xác thực vân tay</string>
+
+    <string name="warning_question_skipped">Câu hỏi bảo mật của bạn đã bị bỏ qua</string>
+    <string name="setup_security_question_successfully">Thiết lập câu hỏi bảo mật thành công!</string>
+    <string name="setup_your_password_successfully">Thiệt lập mật khẩu thành công!</string>
+    <!--password-->
+
+    <!-- notification display -->
+    <string name="other_settings">Các thiết lập khác</string>
+    <string name="add_to_group">Thêm vào nhóm</string>
+
+    <string name="today">Hôm nay</string>
+    <!-- notification display -->
+    <!--setting-->
+    <string name="pre_general">Chung</string>
+
+    <string name="pre_listener_status">Trạng thái người nghe thông báo</string>
+    <string name="pre_listener_status_disabled">Đã tắt - bấm vào đây để bật</string>
+    <string name="pre_listener_status_enabled">Đã cho phép</string>
+
+    <string name="pre_general_total_notification">Tổng thông báo</string>
+
+    <string name="pre_general_language">Ngôn ngữ</string>
+
+    <string name="pre_screen_capture">Chụp màn hình</string>
+    <string name="pre_screen_capture_summary">Chụp ảnh màn hình có thể tiết lộ thông tin không mong muốn.</string>
+
+    <string name="pre_privacy">Riêng tư</string>
+    <string name="pre_privacy_setup_passcode">Mật khẩu khóa</string>
+    <string name="pre_privacy_setup_passcode_summary">Sử dụng mật khẩu để mở khóa ứng dụng.</string>
+    <string name="pre_privacy_fingerprint">Sinh trắc học</string>
+    <string name="pre_privacy_fingerprint_summary">Sử dụng dấu vân tay hoặc khuôn mặt… để mở khóa ứng dụng.</string>
+
+    <string name="pre_notification_log">Nhật ký thông báo</string>
+    <string name="pre_log_ongoing">Lưu trữ ongoing</string>
+    <string name="pre_log_ongoing_summary">Lưu trữ các thông báo như tải xuống, cuộc gọi… Các thông báo này được phát ra liên tục tạo ra một số lượng lớn các dữ liệu bổ sung.</string>
+
+    <string name="pre_translate_language">Dịch</string>
+
+    <string name="notification_permission">Truy cập thông báo</string>
+    <string name="notification_permission_summary">Cho phép ứng dụng gửi thông báo và thực hiện một số tính năng</string>
+
+    <string name="pre_keep_alive">Giữ ứng dụng trực tiếp</string>
+    <string name="pre_keep_alive_summary">Chạy thông báo trên thanh trạng thái để ngăn hệ thống từ chối trong điều kiện tài nguyên thấp</string>
+
+    <string name="pre_battery_optimization">Không giới hạn pin</string>
+    <string name="pre_battery_optimization_summary">Cho phép các ứng dụng chạy ở chế độ nền mà không bị giới hạn về pin.</string>
+    <string name="battery_optimization_explain">
+        Không giới hạn pin cho phép %1$s chạy ở chế độ nền mà không giới hạn về lượng pin.\n\nKhông giới hạn pin có thể khiến thiết bị tiêu hao pin nhưng đảm bảo rằng các dịch vụ nền của ứng dụng không bị hệ thống loại bỏ khi bạn ngừng sử dụng ứng dụng.\n \nKhông giới hạn pin rất cần thiết để %2$s hoạt động bình thường.
+    </string>
+    <string name="battry_optimization_dialog_explain">
+        Không giới hạn pin cho phép %1$s chạy ở chế độ nền mà không bị giới hạn về lượng pin tiêu thụ.\n\nKhông giới hạn pin  cần thiết để %2$s hoạt động bình thường, vui lòng cho phép điều đó.
+    </string>
+    <string name="not_battery_optimization_status">Trạng thái: </string>
+    <string name="not_battery_optimization_status_disabled">không cho phép</string>
+    <string name="not_battery_optimization_status_enabled">đã cho phép</string>
+
+    <!-- Tutorial -->
+    <string name="turn_on_battery_optimization">Bật không tối ưu hóa pin</string>
+    <string name="method_1">Cách 1</string>
+    <string name="open_details_setting">Mở cài đặt ứng dụng</string>
+    <string name="tap_battery">Chọn Pin hoặc mức sử dụng pin</string>
+    <string name="tap_battery_note">Lưu ý: một số thiết bị Android không có bước này, bạn có thể thử tìm kiếm hoặc chọn cách 2.</string>
+    <string name="turn_on_unrestricted_mode">Chọn chế độ không hạn chế</string>
+    <string name="app_detail_setting">Chi tiết cài đặt</string>
+
+    <string name="method_2">Cách 2</string>
+    <string name="open_battery_optimization">Mở tối ứu hóa pin</string>
+    <string name="optimize_change_to_all">Chọn \"không được tối ưu hóa\", thay đổi thành tất cả ứng dụng</string>
+    <string name="find_notisaver_app">Tìm Notisaver và nhấp vào nó. Nếu hộp thoại hiển thị, hãy chọn \"Không tối ưu hóa\" và hoàn tất</string>
+    <string name="optimize_app_list">Tối ưu hóa pin</string>
+
+    <string name="battery_optimization_folder_name">battery_optimization_vi</string>
+    <!--setting-->
+
+    <plurals name="timestamp_minute">
+        <item quantity="other">%1$d phút trươc</item>
+    </plurals>
+
+    <plurals name="timestamp_hours">
+        <item quantity="other">%1$d giờ trước</item>
+    </plurals>
+
+    <string name="timestamp_before_day">1 ngày trước</string>
+
+    <string name="unknown_app">Không xác định</string>
+    <string name="done_all">Đã đọc</string>
+
+    <plurals name="number_notification">
+        <item quantity="other">%1$d thông báo</item>
+    </plurals>
+
+    <string name="do_you_want_to_contiune">Bạn có muốn tiếp tục không?</string>
+
+    <string name="mute_notification">Xóa thông báo</string>
+
+    <string name="waring_cancel_when_push">
+            %1$s sẽ cố gắng xóa thông báo trên thanh trạng thái. Điều này có thể khiến một số ứng dụng không hoạt động bình thường.
+    </string>
+
+    <string name="warning_log_ongoing">
+        Log Ongoing sẽ tạo ra sự dư thừa dữ liệu gây lãng phí bộ nhớ của thiết bị.
+    </string>
+
+    <string name="warning_exclude_app">
+        %1$s sẽ không lưu trữ bất kỳ thông báo nào của ứng dụng.
+    </string>
+
+    <string name="waring_delete_notification">
+        Dữ liệu của bạn sẽ bị mất và không thể khôi phục.
+    </string>
+
+    <string name="recent_notification_empty_state">
+        Các thông báo gần đây của các ứng dụng sẽ được lưu trữ ở đây.
+    </string>
+
+    <!-- notification display -->
+
+    <!-- app option -->
+    <string name="option_remove_notification_short">Xóa</string>
+    <string name="option_remove_notification">Xóa tất cả thông báo</string>
+    <string name="option_open_app_short">Mở</string>
+    <string name="option_open_app">Mở ứng dụng</string>
+    <string name="option_open_setting_short">Cài đặt</string>
+    <string name="option_open_setting">Mở cài đặt ứng dụng</string>
+    <string name="option_exclude_app_short">Không theo dõi</string>
+    <string name="option_include_app_short">Theo dõi</string>
+    <string name="option_delete_app">Xóa ứng dụng</string>
+    <string name="option_enable_cancel_short">Cho phép xóa thông báo</string>
+    <string name="option_disable_cancel">Không được phép xóa thông báo</string>
+    <string name="option_enable_log_ongoing">Bật lưu trữ onging</string>
+    <string name="option_disable_log_ongoing">Tắt lưu trữ ongoing</string>
+    <!-- app option -->
+
+    <!--Notification list-->
+    <string name="add_to_category">Thêm vào danh mục</string>
+    <string name="notification_group_by">Nhóm theo</string>
+    <string name="notification_group_by_id">Nhóm thông báo</string>
+    <string name="notification_group_by_app">Ứng dụng</string>
+    <string name="notification_group_by_none">Không có</string>
+    <string name="notification_sort_by">Sắp xếp</string>
+    <string name="notification_sort_by_time_desc">Mới nhất</string>
+    <string name="notification_sort_by_time_asc">Cũ nhất</string>
+    <!--Notification list-->
+
+    <!--error-->
+    <string name="delete_failed">Xóa thât bại!</string>
+    <string name="locating_notification_error">Đã xảy ra lỗi khi phân bổ dữ liệu từ các mục</string>
+    <string name="package_not_found_error">Không thể mở ứng dụng chỉ định!</string>
+    <string name="setting_open_error">Không thể mở ứng dụng đích!</string>
+    <string name="error_no_data_found">Lỗi! không tìm thấy dữ liệu nào</string>
+    <string name="please_try_again">Đã xảy ra lỗi, vui lòng thử lại !</string>
+    <string name="not_fault_mail_browser">Không có ứng dụng email nào được cài đặt.</string>
+    <string name="error_app_unknown">Lỗi! Ứng dụng không xác định</string>
+    <!--error-->
+
+    <string name="access_notifications">Truy cập thông báo</string>
+    <string name="access_notifications_summary">%1$s cần có quyền truy cập thông báo để nghe thông báo do các ứng dụng phát ra. Bạn không thể lưu thông báo nếu quyền này không được cấp.</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="privacy_policy_https">"https://thepast-89e21.web.app/notisave_policy"</string>
+    <string name="terms_of_service">Điều khoản dịch vụ</string>
+    <string name="terms_of_service_https">https://thepast-89e21.web.app/notisave_terms_of_service</string>
+    <string name="usage_policy_summary">Khi sử dụng ứng dụng, bạn đồng ý với ** và ** của chúng tôi. Do đó, bạn nên đọc kỹ chúng trước khi sử dụng ứng dụng.</string>
+
+    <!-- Permission Explain-->
+    <string name="post_notification_rationale">%1$s cần có quyền thông báo để có thể gửi thông báo và thực hiện một số tính năng liên quan.</string>
+    <string name="post_notification_from_setting">Vui lòng cho phép quyền thông báo từ cài đặt.</string>
+    <!-- Permission Explain-->
+
+    <string name="default_language_system">Hệ thống</string>
+</resources>

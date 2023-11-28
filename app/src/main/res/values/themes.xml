@@ -1,0 +1,309 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="colorDisable" format="color|reference" />
+    <attr name="textColorHintVariant" format="color|reference" />
+
+    <style name="Theme.Notisaver.DayNight" parent="Theme.Notisaver" />
+
+    <!-- Base application theme. -->
+    <style name="Theme.Notisaver" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryVariantLight</item>
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="colorOnPrimaryVariant">@color/colorOnPrimaryVariantLight</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantLight</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryLight</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="colorTertiary">@color/colorTertiaryLight</item>
+
+        <item name="android:colorBackground">@color/colorBackgroundLight</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundLight</item>
+
+        <item name="colorSurface">@color/colorSurfaceLight</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceLight</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariantLight</item>
+
+        <item name="colorError">@color/colorErrorLight</item>
+        <item name="colorOnError">@color/colorOnErrorLight</item>
+
+        <item name="colorDisable">@color/colorDisableLight</item>
+        <item name="textColorHintVariant">@color/textColorHintVariantLight</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryLight</item>
+        <item name="android:textColorHint">@color/textColorHintLight</item>
+
+        <item name="bottomAppBarStyle">
+            @style/Widget.MaterialComponents.BottomAppBar.PrimarySurface
+        </item>
+
+        <item name="popupMenuStyle">@style/Theme.Notisaver.PopupMenu</item>
+
+        <item name="materialAlertDialogTheme">@style/Theme.Notisaver.AlertDialog</item>
+
+        <item name="searchViewStyle">@style/Base.Widget.AppCompat.SearchView.ActionBar</item>
+        <item name="toolbarStyle">@style/Theme.Notisaver.Toolbar</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges
+        </item>
+    </style>
+
+    <style name="Theme.Notisaver.Dark" parent="Theme.Notisaver">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryDark</item>
+        <item name="colorOnPrimaryVariant">@color/colorOnPrimaryVariantDark</item>
+
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantDark</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryDark</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="colorTertiary">@color/colorTertiaryDark</item>
+
+        <item name="android:colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundDark</item>
+
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariantDark</item>
+
+        <item name="colorError">@color/colorErrorDark</item>
+        <item name="colorOnError">@color/colorOnErrorDark</item>
+
+        <item name="colorDisable">@color/colorDisableDark</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryDark</item>
+        <item name="android:textColorHint">@color/textColorHintDark</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="Theme.Notisaver.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/Theme.Notisaver.Overlay.Toolbar.DayNight</item>
+    </style>
+
+    <style name="Theme.Notisaver.Overlay.Toolbar.DayNight" parent="Theme.Notisaver.Overlay.Toolbar" />
+
+    <style name="Theme.Notisaver.Overlay.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="android:textColorHint">@color/textColorHintVariantLight</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Theme.Notisaver.Overlay.Toolbar.Dark" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryDark</item>
+        <item name="android:textColorHint">@color/textColorHintDark</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Theme.Notisaver.Toolbar.Popup.DayNight" parent="Theme.Notisaver.Toolbar.Popup.Light" />
+
+    <style name="Theme.Notisaver.Toolbar.Popup.Light" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorSurfaceLight</item>
+        <item name="colorOnPrimary">@color/colorOnSurfaceLight</item>
+
+        <item name="colorSurface">@color/colorSurfaceLight</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceLight</item>
+
+        <item name="android:textColorPrimary">@color/colorOnSurfaceLight</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryLight</item>
+
+        <item name="android:popupBackground">@drawable/notisaver_popup_menu_background</item>
+    </style>
+
+    <style name="Theme.Notisaver.Toolbar.Popup.Dark" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorSurfaceDark</item>
+        <item name="colorOnPrimary">@color/colorOnSurfaceDark</item>
+
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+
+        <item name="android:textColorPrimary">@color/colorOnSurfaceDark</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryDark</item>
+
+    </style>
+
+    <style name="MainTabNormalTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Notisaver.NInfoBottomSheet.DayNight" parent="Theme.Notisaver.NInfoBottomSheet" />
+
+    <style name="Theme.Notisaver.NInfoBottomSheet" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="bottomSheetStyle">
+            @style/Theme.Notisaver.NInfoBottomSheet.Modal
+        </item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="enableEdgeToEdge">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="paddingTopSystemWindowInsets">false</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <style name="Theme.Notisaver.NInfoBottomSheet.Dark" parent="Theme.Notisaver.NInfoBottomSheet">
+        <item name="bottomSheetStyle">
+            @style/Theme.Notisaver.NInfoBottomSheet.Dark.ShapeAppearance
+        </item>
+    </style>
+
+    <style name="Theme.Notisaver.NInfoBottomSheet.Dark.ShapeAppearance" parent="Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@drawable/background_bottom_sheet_info_notification</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryDark</item>
+    </style>
+
+    <style name="Theme.Notisaver.NInfoBottomSheet.Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="shapeAppearance">@drawable/background_bottom_sheet_info_notification</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryLight</item>
+    </style>
+
+    <style name="Theme.Notisaver.FullScreenDialogFragment.DayNight" parent="Theme.Notisaver.FullScreenDialogFragment" />
+
+    <style name="Theme.Notisaver.FullScreenDialogFragment" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariantLight</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="android:windowBackground">@color/colorBackgroundLight</item>
+    </style>
+
+    <style name="Theme.Notisaver.FullScreenDialogFragment.Dark" parent="Theme.Notisaver.FullScreenDialogFragment">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryLight</item>
+        <item name="android:windowBackground">@color/colorBackgroundDark</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariantDark</item>
+    </style>
+
+    <style name="Theme.Notisaver.AlertDialog.DayNight" parent="Theme.Notisaver.AlertDialog" />
+
+    <style name="Theme.Notisaver.AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorSurface">@color/colorSurfaceLight</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceLight</item>
+
+        <item name="android:textColorPrimary">@color/textColorPrimaryLight</item>
+
+        <item name="android:colorControlNormal">@color/colorDisableLight</item>
+        <item name="android:windowElevation">24dp</item>
+        <item name="materialAlertDialogBodyTextStyle">
+            @style/Theme.Notisaver.AlertDialog.Body.Text.
+        </item>
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/Theme.Notisaver.AlertDialog.Title.Text
+        </item>
+        <item name="buttonBarPositiveButtonStyle">@style/Theme.SupportChemistry.AlertDialog.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Theme.SupportChemistry.AlertDialog.Button.Negative</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:autoLink">none</item>
+
+        <item name="android:windowBackground">@drawable/alert_dialog_background</item>
+    </style>
+
+    <style name="Theme.Notisaver.AlertDialog.Dark" parent="Theme.Notisaver.AlertDialog">
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryDark</item>
+        <item name="android:windowBackground">@drawable/alert_dialog_background</item>
+    </style>
+
+    <style name="Theme.Notisaver.AlertDialog.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">
+            @style/Theme.Notisaver.AlertDialog.Title.Text.TextAppearance
+        </item>
+    </style>
+
+    <style name="Theme.Notisaver.AlertDialog.Title.Text.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:textSize">@dimen/page_title_text_size_2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Notisaver.AlertDialog.Body.Text." parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHighlight">?colorSecondary</item>
+    </style>
+
+    <style name="Theme.SupportChemistry.AlertDialog.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="backgroundTint">?colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="rippleColor">?android:colorControlHighlight</item>
+    </style>
+
+    <style name="Theme.SupportChemistry.AlertDialog.Button.Negative" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">?colorSecondary</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="rippleColor">?colorSecondary</item>
+        <item name="android:layout_marginEnd">4dp</item>
+    </style>
+
+    <style name="Theme.Notisaver.IconShapeAppearanceOverlay">
+        <item name="cornerSize">4dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Notisaver.IconShapeAppearanceOverlay.Circle">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Notisaver.IconShapeAppearanceOverlay.Large">
+        <item name="cornerSize">8dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Notisaver.BottomAppBarStyle" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="materialThemeOverlay">@style/Theme.Notisaver.BottomAppBarStyle.Overlay</item>
+    </style>
+
+    <style name="Theme.Notisaver.BottomAppBarStyle.Overlay">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantLight</item>
+    </style>
+
+    <style name="Theme.Notisaver.PopupMenu" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="overlapAnchor">true</item>
+        <item name="android:popupBackground">@drawable/notisaver_popup_menu_background</item>
+    </style>
+
+
+    <style name="Theme.Notisaver.TabLayout.TextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/primary_text_size</item>
+    </style>
+</resources>

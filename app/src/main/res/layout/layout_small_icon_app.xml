@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/layout_small_icon_app_container_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/layout_small_icon_app_view"
+        android:layout_width="@dimen/app_icon_size_small"
+        android:layout_height="@dimen/app_icon_size_small"
+        android:background="?colorOnSurfaceVariant"
+        android:clickable="false"
+        android:layout_marginEnd="4dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:contentPadding="2dp"
+        app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay"
+        tools:src="@mipmap/ic_launcher"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/layout_small_icon_app_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/item_recent_notification_large_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="Android system" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,116 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+
+    // https://firebase.google.com/docs/crashlytics/get-started?platform=android
+    // Make sure that you have the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+    // Add the Crashlytics Gradle plugin
+    id 'com.google.firebase.crashlytics'
+}
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.notisaver"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        resourceConfigurations += ['en', 'vi', 'es']
+
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testApplicationId "com.notisaver.test"
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas")
+            }
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+        freeCompilerArgs += "-Xjvm-default=all"
+    }
+
+    namespace 'com.notisaver'
+
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'androidx.biometric:biometric-ktx:1.2.0-alpha05'
+    androidTestImplementation 'com.google.firebase:testlab-instr-lib:0.2'
+
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'androidx.test.ext:junit-ktx:1.1.5'
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+    //noinspection KaptUsageInsteadOfKsp
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
+
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+
+    implementation "androidx.paging:paging-runtime-ktx:3.2.0"
+    implementation "androidx.room:room-ktx:2.5.2"
+    implementation "androidx.room:room-paging:2.5.2"
+    //noinspection KaptUsageInsteadOfKsp
+    kapt "androidx.room:room-compiler:2.5.2"
+
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "androidx.test:core-ktx:1.5.0"
+    testImplementation "org.robolectric:robolectric:4.9"
+
+    debugImplementation "androidx.fragment:fragment-testing:1.6.1"
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:core-ktx:1.5.0'
+    androidTestImplementation "androidx.test:rules:1.5.0"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.room:room-testing:2.5.2"
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+
+    // https://firebase.google.com/docs/crashlytics/get-started?platform=android
+    implementation platform('com.google.firebase:firebase-bom:32.2.3')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+}

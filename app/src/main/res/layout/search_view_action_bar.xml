@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/search_bar_container_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?colorPrimary"
+    android:paddingStart="0dp"
+    android:paddingEnd="16dp"
+    android:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/search_bar_close_button"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:foreground="?android:attr/actionBarItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorOnPrimary" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_bar_enter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:inputType="text"
+        android:layout_weight="1"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="@string/search_hint"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:textColor="?colorOnPrimary"
+        android:textColorHint="?textColorHintVariant" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/search_bar_clear_text_button"
+        android:layout_width="48dp"
+        android:layout_height="?actionBarSize"
+        android:foreground="?android:attr/actionBarItemBackground"
+        android:padding="12dp"
+        android:src="@drawable/ic_close"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorOnPrimary"
+        tools:visibility="visible" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

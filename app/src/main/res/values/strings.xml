@@ -1,0 +1,286 @@
+<resources>
+
+    <string name="app_name" translatable="false">Notisaver</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search…</string>
+    <string name="app_version_title">App Version</string>
+
+    <string name="all_app">All of the applications</string>
+
+    <string name="turn_on">Turn on</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
+    <string name="canceling">Canceling…</string>
+
+    <string name="empty_list">Empty</string>
+
+    <string name="ok">OK</string>
+    <string name="action_continue">Continue</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="close">Close</string>
+    <string name="start">Start</string>
+    <string name="selected">Selected %1$d</string>
+    <string name="password">Password</string>
+    <string name="create">Create</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="scan_app_device">Scan app on device</string>
+    <string name="scanning">Scanning app…</string>
+    <string name="process_delete_notification">Processing and deleting notifications…</string>
+
+
+    <string name="notification_running_background">%1$s is running</string>
+
+    <string name="retart_app">Please restart the application.</string>
+
+    <!--Start screen-->
+    <string name="loading_data">Loading Data</string>
+    <string name="welcome_to">Welcome to %1$s</string>
+    <string name="accept_and_continue">Accept &#x26; continue</string>
+    <!--Start screen-->
+
+    <!--main menu-->
+    <string name="setting">Setting</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_app">Rate app</string>
+    <string name="share_app">Share</string>
+    <string name="about">About</string>
+    <string name="update_version">Check for updates</string>
+    <!--main menu-->
+
+    <!--Main Option-->
+    <string name="notification_history">History</string>
+    <string name="notification_history_title">Notification history</string>
+    <string name="notification_manager">Manager</string>
+    <string name="notification_message">Message</string>
+    <string name="notification_manager_title">Notification Manager</string>
+    <!--Main Option-->
+
+    <!--Notification list-->
+    <string name="add_to_category">Add to category</string>
+    <string name="notification_group_by">Filter</string>
+    <string name="notification_group_by_id">Group</string>
+    <string name="notification_group_by_app">App</string>
+    <string name="notification_group_by_none">None</string>
+    <string name="notification_sort_by">Sort</string>
+    <string name="notification_sort_by_time_desc">Newest</string>
+    <string name="notification_sort_by_time_asc">Oldest</string>
+    <!--Notification list-->
+
+
+    <!--password-->
+    <string name="create_password">Create your password</string>
+    <string name="verify_password">Verify Password</string>
+    <string name="forgotten_password">Forgotten password</string>
+
+    <string name="password_length_warning">\u26A0 Your password at least 6 letters</string>
+    <string name="password_not_match">\u26A0 Passwords do not match</string>
+    <string name="password_wrong">\u26A0 The password is wrong, please try again</string>
+
+    <string name="question_where_born">Where are you born?</string>
+    <string name="question_father_name">What is your father\'s name?</string>
+    <string name="question_mother_name">What is your mother\'s name?</string>
+    <string name="question_favorite_color">What is your favourite color?</string>
+    <string name="question_favorite_number">What is your favourite number?</string>
+    <string name="question_date_birthday">What date is your birthday?</string>
+    <string name="question_hometown">Where is your hometown?</string>
+
+    <string name="setup_your_password">Setup your password</string>
+    <string name="setup_your_password_summary">You should set a Security Question after setup password</string>
+
+    <string name="retrieve_password">Retrieve password</string>
+    <string name="verify_your_security_question">Verify your security question</string>
+
+    <string name="warning_skip_security_question">Your data can be lost if you forgot password.</string>
+
+    <string name="setup_security_question_summary">To use retrieve your password</string>
+    <string name="choose_your_question">Choose your question</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="warning_answer_question_empty">⚠ Your answer can not be empty</string>
+    <string name="setup_your_security_question">Setup your security question</string>
+
+    <string name="device_not_support_fingerprint">Your device do not support fingerprint</string>
+    <string name="let_setup_your_password">Let\'s setup your password</string>
+    <string name="use_password">Use password</string>
+    <string name="fingerprint_authentication">Fingerprint authentication</string>
+
+    <string name="warning_question_skipped">Your security question has been skipped</string>
+    <string name="setup_security_question_successfully">Set up security question successfully!</string>
+    <string name="setup_your_password_successfully">Set up password successfully!</string>
+
+    <string name="scan_fingerprint_description">Scan your fingerprint</string>
+    <!--password-->
+
+    <!-- setting -->
+    <string name="pre_general">General</string>
+
+    <string name="pre_listener_status">Notification listener status</string>
+    <string name="pre_listener_status_disabled">Disabled - click here to enable.</string>
+    <string name="pre_listener_status_enabled">Enabled</string>
+
+    <string name="pre_general_total_notification">Total notifications</string>
+
+    <string name="pre_general_language">Language</string>
+
+    <string name="pre_screen_capture">Screen capture</string>
+    <string name="pre_screen_capture_summary">Taking screenshots may reveal unwanted information.</string>
+
+    <string name="pre_privacy">Privacy</string>
+    <string name="pre_privacy_setup_passcode">Passcode lock</string>
+    <string name="pre_privacy_setup_passcode_summary">Use the passcode to unlock the app.</string>
+    <string name="pre_privacy_fingerprint">Biometric</string>
+    <string name="pre_privacy_fingerprint_summary">Use fingerprint or face to unlock app.</string>
+
+    <string name="pre_notification_log">Notification Log</string>
+
+    <string name="notification_permission">Notification permission</string>
+    <string name="notification_permission_summary">Allows the app to send notifications, and perform some features</string>
+
+    <string name="pre_keep_alive">Keep app live</string>
+    <string name="pre_keep_alive_summary">Running a notification on the status bar to prevent system remove app during low resource conditions</string>
+
+    <string name="pre_battery_optimization">Not optimize battery</string>
+    <string name="pre_battery_optimization_summary">Allows apps to run in the background without battery limits.</string>
+    <string name="battery_optimization_explain">
+        %1$s can run in the background with battery limitations.\n\nNot optimizing battery can cause the device to drain battery, but ensures that background services for apps are not dropped by the system when you stop using the app.\n\nNot optimize battery is required for %2$s to function properly.
+    </string>
+    <string name="battry_optimization_dialog_explain">
+        Not optimizing battery allows %1$s to run in the background without limiting battery.\n\nNot optimizing battery is required for %2$s to function properly, please allow it.
+    </string>
+
+    <string name="not_battery_optimization_status">Status: </string>
+    <string name="not_battery_optimization_status_disabled">disabled</string>
+    <string name="not_battery_optimization_status_enabled">enabled</string>
+
+    <!-- Tutorial -->
+    <string name="turn_on_battery_optimization">Turn on not optimize battery</string>
+    <string name="method_1">Method 1</string>
+    <string name="open_details_setting">Open app details setting</string>
+    <string name="tap_battery">Tap Battery or App Battery usage</string>
+    <string name="tap_battery_note">Important: some Android devices do not have this step, you can try to find something or choose method 2.</string>
+    <string name="turn_on_unrestricted_mode">Choose Unrestricted mode</string>
+    <string name="app_detail_setting">Details setting</string>
+
+    <string name="method_2">Method 2</string>
+    <string name="open_battery_optimization">Open battery optimization</string>
+    <string name="optimize_change_to_all">Tap \"not optimized\", change to all apps</string>
+    <string name="find_notisaver_app">Find Notisaver and click on it. If dialog displays, choose \"Do not optimize\" and done</string>
+    <string name="optimize_app_list">Battery optimization</string>
+
+    <string name="battery_optimization_folder_name">battery_optimization</string>
+    <!-- Tutorial -->
+
+    <string name="pre_log_ongoing">Log ongoing</string>
+    <string name="pre_log_ongoing_summary">Log notifications such as downloads, call… These notifications are emitted continuously generating a large number of additional log entries</string>
+
+    <string name="pre_translate_language">Translate</string>
+    <!-- setting -->
+
+    <!-- notification display -->
+    <string name="other_settings">Other Settings</string>
+    <string name="add_to_group">Add to group</string>
+    <string name="today">Today</string>
+    <string name="custom_content">(Custom content of app)</string>
+
+    <plurals name="count_notification">
+        <item quantity="one">%1$d notification</item>
+        <item quantity="other">%1$d notifications</item>
+    </plurals>
+
+    <plurals name="timestamp_minute">
+        <item quantity="one">%1$d minute ago</item>
+        <item quantity="other">%1$d minutes ago</item>
+    </plurals>
+
+    <plurals name="timestamp_hours">
+        <item quantity="one">%1$d hour ago</item>
+        <item quantity="other">%1$d hours ago</item>
+    </plurals>
+
+    <string name="timestamp_before_day">1 day ago</string>
+
+    <string name="unknown_app">Unknown</string>
+    <string name="done_all">Done all</string>
+
+    <plurals name="number_notification">
+        <item quantity="one">%1$d notification</item>
+        <item quantity="other">%1$d notifications</item>
+    </plurals>
+
+    <string name="mute_notification">Clean notification</string>
+
+    <string name="do_you_want_to_contiune">Do you want to continue?</string>
+
+    <string name="waring_cancel_when_push">
+        %1$s will try to clear notifications on status bar. This may cause some applications to not function properly.
+    </string>
+
+    <string name="warning_log_ongoing">
+        Log Ongoing will create data redundancy which wastes memory of device.
+    </string>
+
+    <string name="warning_exclude_app">
+        %1$s will not store any notification of app.
+    </string>
+
+    <string name="waring_delete_notification">
+        Your data will be lost and cannot restore.
+    </string>
+
+    <string name="recent_notification_empty_state">
+        Notifications recently are pushed by apps that will be stored here.
+    </string>
+
+    <plurals name="stored_notification_in_history">
+        <item quantity="one">%1$d notification are moved to history</item>
+        <item quantity="other">%1$d notifications are moved to history</item>
+    </plurals>
+    <!-- notification display -->
+
+    <!-- app option -->
+    <string name="option_remove_notification_short">Remove</string>
+    <string name="option_remove_notification">Clear all notifications</string>
+    <string name="option_open_app_short">Open</string>
+    <string name="option_open_app">Open App</string>
+    <string name="option_open_setting_short">Setting</string>
+    <string name="option_open_setting">Open App\'s setting</string>
+    <string name="option_exclude_app_short">Exclude</string>
+    <string name="option_include_app_short">Include</string>
+    <string name="option_delete_app">Delete app</string>
+    <string name="option_enable_cancel_short">Enable clean notification</string>
+    <string name="option_disable_cancel">Disable clean notification</string>
+    <string name="option_enable_log_ongoing">Enable log ongoing</string>
+    <string name="option_disable_log_ongoing">Disable log ongoing</string>
+    <!-- app option -->
+
+    <!--error-->
+    <string name="delete_failed">Delete failed!</string>
+    <string name="locating_notification_error">An error occurred while allocating data from items</string>
+    <string name="package_not_found_error">Can not open the target application!</string>
+    <string name="setting_open_error">Can not open set of target application!</string>
+    <string name="error_no_data_found">Error! no data found</string>
+    <string name="please_try_again">An error occurred, please try again!</string>
+    <string name="not_fault_mail_browser">There are no email clients installed.</string>
+    <string name="error_app_unknown">Error! App unknown</string>
+    <!--error-->
+
+    <string name="access_notifications">Notification access</string>
+    <string name="access_notifications_summary">%1$s needs permission to notification access to listen to the notifications emitted by the application. You cannot save notification if this permission is not granted.</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy_https" translatable="false">"https://thepast-89e21.web.app/notisave_policy"</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="terms_of_service_https" translatable="false">https://thepast-89e21.web.app/notisave_terms_of_service</string>
+    <string name="usage_policy_summary">By using this application, you agree with our ** and **. You should make sure therefore that you read them carefully before using the app</string>
+
+    <!-- Permission Explain-->
+    <string name="post_notification_rationale">%1$s needs notification permission, in order to post notifications and perform some related features.</string>
+    <string name="post_notification_from_setting">Please allow notification permission from setting.</string>
+    <!-- Permission Explain-->
+
+    <string name="default_language_system">System</string>
+    <string name="english_language" translatable="false">English</string>
+    <string name="vietnam_language" translatable="false">Tiếng Việt</string>
+    <string name="spanish_language" translatable="false">Español</string>
+
+    <string name="support_translate_link" translatable="false">https://osfrgw8.oneskyapp.com/collaboration/project?id=190797</string>
+</resources>

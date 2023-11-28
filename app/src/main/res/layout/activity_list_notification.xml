@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".main.log.activities.NotificationPackageActivity">
+
+
+    <include layout="@layout/layout_empty_state" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/activity_notification_list_header_container_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_collapseMode="pin"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/activity_notification_list_app_back_view"
+                            android:layout_width="?actionBarSize"
+                            android:layout_height="?actionBarSize"
+                            android:foreground="?android:attr/actionBarItemBackground"
+                            android:padding="16dp"
+                            android:src="@drawable/ic_arrow_back"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="?colorOnPrimary" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/activity_notification_list_app_title_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/notification_history_title"
+                            android:textColor="?colorOnPrimary"
+                            android:textSize="@dimen/page_title_text_size_2"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/activity_notification_list_app_search_mode_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?actionBarSize"
+                            android:foreground="?android:attr/actionBarItemBackground"
+                            android:paddingHorizontal="8dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="24dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_search"
+                                app:tint="?colorOnPrimary" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/activity_notification_list_app_support_menu_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?actionBarSize"
+                            android:layout_marginEnd="8dp"
+                            android:foreground="?android:attr/actionBarItemBackground"
+                            android:paddingHorizontal="8dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_more_vert_24"
+                                app:tint="?colorOnPrimary" />
+                        </FrameLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <include
+                        android:visibility="invisible"
+                        layout="@layout/selected_item_bar"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/activity_notification_list_sub_header_container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="12dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/activity_notification_list_app_sub_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/activity_detail_notification_app_icon_view"
+                            android:layout_width="@dimen/app_icon_size"
+                            android:layout_height="@dimen/app_icon_size"
+                            android:layout_gravity="center_vertical"
+                            app:shapeAppearanceOverlay="@style/Theme.Notisaver.IconShapeAppearanceOverlay"
+                            app:srcCompat="@drawable/ic_extension" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/activity_detail_notification_token_container_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="2dp"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/activity_detail_notification_app_token_problem"
+                                android:layout_width="@dimen/token_icon_size"
+                                android:layout_height="@dimen/token_icon_size"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="2dp"
+                                android:tint="?colorError"
+                                app:srcCompat="@drawable/ic_error" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/activity_detail_notification_app_token_cleanable_view"
+                                android:layout_width="@dimen/token_icon_size"
+                                android:layout_height="@dimen/token_icon_size"
+                                android:layout_gravity="end"
+                                android:tint="?colorError"
+                                app:srcCompat="@drawable/ic_notifications_off" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/activity_detail_notification_app_token_exclude_view"
+                                android:layout_width="@dimen/token_icon_size"
+                                android:layout_height="@dimen/token_icon_size"
+                                android:layout_gravity="end"
+                                android:tint="?colorError"
+                                app:srcCompat="@drawable/ic_blur_off" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/activity_notification_list_app_name_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="8dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/unknown_app"
+                                android:textColor="?colorOnPrimary"
+                                android:textSize="@dimen/primary_text_size"
+                                android:textStyle="bold"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/activity_notification_list_app_count_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="?colorOnPrimary"
+                                android:textSize="@dimen/secondary_text_size"
+                                tools:text="3 thong bao" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/activity_notification_list_app_enter_search_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_search_view"
+                        android:drawableStart="@drawable/ic_search"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="?android:textColorHint"
+                        android:hint="@string/search_hint"
+                        android:lines="1"
+                        android:textSize="@dimen/paragraph_text_size"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_detail_notification_container_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,248 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="search">Buscar</string>
+    <string name="search_hint">Buscar…</string>
+    <string name="app_version_title">Version de aplicacion</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Okay</string>
+    <string name="dismiss">Despedir</string>
+    <string name="start">Comenzar</string>
+    <string name="selected">Seleccionado %1$d</string>
+    <string name="password">Contraseña</string>
+    <string name="create">Crear</string>
+    <string name="confirm">Confirmar</string>
+    <string name="action_continue">Continuar</string>
+    <string name="canceling">Cancelado…</string>
+
+    <string name="turn_on">Activar</string>
+    <string name="allow">Permitir</string>
+    <string name="close">Cerrar</string>
+
+    <string name="empty_list">Vacía</string>
+
+    <string name="all_app">Todas las aplicaciones</string>
+
+    <string name="retart_app">Reinicie la aplicación.</string>
+
+    <string name="custom_content">(Contenido personalizado de la aplicación)</string>
+    <string name="loading_data">Cargando datos</string>
+    <string name="welcome_to">Bienvenido a %1$s</string>
+    <string name="accept_and_continue">Aceptar &#x26; continuar</string>
+
+    <string name="scan_fingerprint_description">Escanea tu huella dactilar</string>
+
+    <string name="notification_running_background">%1$s esta corriendo</string>
+
+    <plurals name="count_notification"  tools:ignore="MissingQuantity">
+        <item quantity="one">%1$d notificación</item>
+        <item quantity="other">%1$d notificaciones</item>
+    </plurals>
+    <!--main menu-->
+    <string name="setting">Configuración</string>
+    <string name="feedback">Comentario</string>
+    <string name="rate_app">Calificar aplicacion</string>
+    <string name="share_app">Compartir</string>
+    <string name="about">Acerca de</string>
+    <string name="update_version">Buscar actualizaciones</string>
+    <!--main menu-->
+
+    <!--Main Option-->
+    <string name="notification_history">Historia</string>
+    <string name="notification_history_title">Historial de notificaciones</string>
+    <string name="notification_manager">Gerente</string>
+    <string name="notification_message">Mensaje</string>
+    <string name="notification_manager_title">Administrador de notificaciones</string>
+    <!--Main Option-->
+
+    <!--Notification list-->
+    <string name="add_to_category">Añadir a la categoría</string>
+    <string name="notification_group_by">Filtro</string>
+    <string name="notification_group_by_id">Grupo</string>
+    <string name="notification_group_by_none">Ninguno</string>
+    <string name="notification_sort_by">Ordenar</string>
+    <string name="notification_sort_by_time_desc">Más nuevo</string>
+    <string name="notification_sort_by_time_asc">Más antiguo</string>
+    <!--Notification list-->
+
+    <!--password-->
+    <string name="create_password">Crea tu contraseña</string>
+    <string name="verify_password">Verificar contraseña</string>
+    <string name="forgotten_password">Contraseña olvidada</string>
+
+    <string name="password_length_warning">\u26A0 Tu contraseña de al menos 6 letras</string>
+    <string name="password_not_match">\u26A0 Las contraseñas no coinciden</string>
+    <string name="password_wrong">\u26A0 La contraseña es incorrecta, intente nuevamente</string>
+
+    <string name="question_where_born">¿Donde naciste?</string>
+    <string name="question_father_name">¿Cuál es el nombre de tu padre?</string>
+    <string name="question_mother_name">¿Cual es el nombre de tu madre?</string>
+    <string name="question_favorite_color">¿Cuál es tu color favorito?</string>
+    <string name="question_favorite_number">¿Cual es tu numero favorito?</string>
+    <string name="question_date_birthday">¿Qué día es su cumpleaños?</string>
+    <string name="question_hometown">¿Dónde está tu ciudad natal?</string>
+
+    <string name="setup_your_password">Configura tu contraseña</string>
+    <string name="setup_your_password_summary">Debe establecer una pregunta de seguridad después de configurar la contraseña</string>
+
+    <string name="retrieve_password">Recuperar Contraseña</string>
+    <string name="verify_your_security_question">Verifica tu pregunta de seguridad</string>
+
+    <string name="warning_skip_security_question">Sus datos pueden perderse si olvidó la contraseña.</string>
+
+    <string name="setup_security_question_summary">Para utilizar recupera tu contraseña</string>
+    <string name="choose_your_question">Elige tu pregunta</string>
+    <string name="enter_your_answer">Introduce tu respuesta</string>
+    <string name="warning_answer_question_empty">⚠ Tu respuesta no puede estar vacía</string>
+    <string name="setup_your_security_question">Configura tu pregunta de seguridad</string>
+
+    <string name="device_not_support_fingerprint">Su dispositivo no admite huellas dactilares</string>
+    <string name="let_setup_your_password">Configuremos tu contraseña</string>
+    <string name="use_password">Usar contraseña</string>
+    <string name="fingerprint_authentication">Autenticación de huellas dactilares</string>
+
+    <string name="warning_question_skipped">Tu pregunta de seguridad ha sido omitida</string>
+    <string name="setup_security_question_successfully">¡Configure la pregunta de seguridad con éxito!</string>
+    <string name="setup_your_password_successfully">¡Configurar contraseña con éxito!</string>
+    <!--password-->
+
+    <!--setting-->
+    <string name="pre_general">General</string>
+
+    <string name="pre_listener_status">Estado del oyente de notificaciones</string>
+    <string name="pre_listener_status_disabled">Deshabilitado - haz clic aquí para habilitar.</string>
+    <string name="pre_listener_status_enabled">Habilitado</string>
+
+    <string name="pre_general_total_notification">Notificaciones totales</string>
+
+    <string name="pre_general_language">Idioma</string>
+
+    <string name="pre_screen_capture">La captura de pantalla</string>
+    <string name="pre_screen_capture_summary">Tomar capturas de pantalla puede revelar información no deseada.</string>
+
+    <string name="pre_privacy">Privacidad</string>
+    <string name="pre_privacy_setup_passcode">Código de bloqueo</string>
+    <string name="pre_privacy_setup_passcode_summary">Use el código de acceso para desbloquear la aplicación.</string>
+    <string name="pre_privacy_fingerprint">Biometría</string>
+    <string name="pre_privacy_fingerprint_summary">Use la huella digital o la cara para desbloquear la aplicación.</string>
+
+    <string name="pre_notification_log">Registro de notificaciones</string>
+    <string name="pre_log_ongoing">Registro en curso</string>
+    <string name="pre_log_ongoing_summary">Notificaciones de registro como descargas, llamadas… Estas notificaciones se emiten de forma continua generando una gran cantidad de entradas de registro adicionales</string>
+
+    <string name="pre_translate_language">Ttraducir</string>
+
+    <string name="notification_permission">Permiso de notificación</string>
+    <string name="notification_permission_summary">Permite que la aplicación envíe notificaciones y realice algunas funciones</string>
+
+    <string name="pre_keep_alive">Mantener la aplicación activa</string>
+    <string name="pre_keep_alive_summary">Mostrar una notificación en la barra de estado para evitar que el sistema elimine la aplicación durante condiciones de recursos bajos</string>
+
+    <string name="pre_battery_optimization">No optimizar la batería</string>
+    <string name="pre_battery_optimization_summary">Permite que las aplicaciones se ejecuten en segundo plano sin límites de batería</string>
+    <string name="battery_optimization_explain">
+        No optimizar la batería permite que %1$s se ejecute en segundo plano sin limitar la batería.\n\nNo optimizar la batería puede hacer que el dispositivo consuma más batería, pero garantiza que los servicios en segundo plano de las aplicaciones no sean detenidos por el sistema cuando dejas de usar la aplicación.\n\nNo optimizar la batería es necesario para que %2$s funcione correctamente.
+    </string>
+    <string name="battry_optimization_dialog_explain">
+        No optimizar la batería permite que %1$s se ejecute en segundo plano sin limitar la batería.\n\nNo optimizar la batería es necesario para que %2$s funcione correctamente, por favor, permítalo.
+    </string>
+
+    <string name="not_battery_optimization_status">Estado: </string>
+    <string name="not_battery_optimization_status_disabled">desactivado</string>
+    <string name="not_battery_optimization_status_enabled">activado</string>
+
+    <!-- Tutorial-->
+    <string name="turn_on_battery_optimization">Desactivar la optimización de la batería</string>
+    <string name="method_1">Método 1</string>
+    <string name="open_details_setting">Abrir configuración de detalles de la aplicación</string>
+    <string name="tap_battery">Toca Batería o Uso de batería de la apps</string>
+    <string name="tap_battery_note">Importante: algunos dispositivos Android no tienen este paso, puedes intentar buscar algo o elegir el método 2.</string>
+    <string name="turn_on_unrestricted_mode">Selecciona el modo sin restricciones</string>
+    <string name="app_detail_setting">Configuración de detalles</string>
+
+    <string name="method_2">Método 2</string>
+    <string name="open_battery_optimization">Abrir optimización de la batería</string>
+    <string name="optimize_change_to_all">Toca \"Sin optimizar\", cambia a todas las apps</string>
+    <string name="find_notisaver_app">Busca Notisaver y haz clic en él. Si aparece un diálogo, elige \"No optimizar\" y listo.</string>
+    <string name="optimize_app_list">Optimización de batería</string>
+
+    <string name="battery_optimization_folder_name">battery_optimization_es</string>
+    <!--setting-->
+
+
+    <!-- notification display -->
+    <string name="other_settings">Otros ajustes</string>
+    <string name="add_to_group">Añadir al grupo</string>
+
+    <string name="today">Hoy</string>
+
+    <string name="timestamp_before_day">Hace 1 día</string>
+
+    <string name="unknown_app">Desconocido</string>
+    <string name="done_all">Hecho todo</string>
+
+    <string name="mute_notification">Notificación limpia</string>
+
+    <string name="do_you_want_to_contiune">¿Quieres continuar?</string>
+
+    <string name="waring_cancel_when_push">
+        %1$s intentará borrar las notificaciones en la barra de estado. Esto puede causar que algunas aplicaciones no funcionen correctamente.
+    </string>
+
+    <string name="warning_log_ongoing">
+        Log Ongoing creará redundancia de datos que desperdiciará la memoria del dispositivo.
+    </string>
+
+    <string name="warning_exclude_app">
+        %1$s no almacenará ninguna notificación de la aplicación.
+    </string>
+
+    <string name="waring_delete_notification">
+        Sus datos se perderán y no podrán restaurarse.
+    </string>
+
+    <string name="recent_notification_empty_state">
+        Las notificaciones recientes son enviadas por aplicaciones que se almacenarán aquí.
+    </string>
+    <!-- notification display -->
+
+    <!-- app option -->
+    <string name="option_remove_notification_short">Eliminar</string>
+    <string name="option_remove_notification">Borrar todas las notificaciones</string>
+    <string name="option_open_app_short">Abre la</string>
+    <string name="option_open_app">Abre la App</string>
+    <string name="option_open_setting_short">Configuración</string>
+    <string name="option_open_setting">Abrir la configuración de la aplicación</string>
+    <string name="option_exclude_app_short">Excluir</string>
+    <string name="option_include_app_short">Incluir</string>
+    <string name="option_delete_app">Eliminar aplicación</string>
+    <string name="option_enable_cancel_short">Habilitar notificación limpia</string>
+    <string name="option_disable_cancel">Deshabilitar notificación de limpieza</string>
+    <string name="option_enable_log_ongoing">Habilitar registro en curso</string>
+    <string name="option_disable_log_ongoing">Inhabilitar registro en curso</string>
+    <!-- app option -->
+
+    <!--error-->
+    <string name="delete_failed">¡Error al eliminar!</string>
+    <string name="locating_notification_error">Ocurrió un error al asignar datos de elementos</string>
+    <string name="package_not_found_error">¡No se puede abrir la aplicación de destino!</string>
+    <string name="setting_open_error">¡No se puede abrir el conjunto de aplicaciones de destino!</string>
+    <string name="error_no_data_found">¡Error! datos no encontrados</string>
+    <string name="please_try_again">¡Ha ocurrido un error. Por favor intente de nuevo!</string>
+    <string name="not_fault_mail_browser">No hay clientes de correo electrónico instalados.</string>
+    <string name="error_app_unknown">¡Error! Aplicación desconocida</string>
+    <!--error-->
+
+    <string name="access_notifications">Acceso a notificaciones</string>
+    <string name="access_notifications_summary">%1$s necesita permiso de acceso a notificaciones para escuchar las notificaciones emitidas por la aplicación. No puede guardar la notificación si no se concede este permiso.</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="terms_of_service">Términos de servicio</string>
+    <string name="usage_policy_summary">Al usar esta aplicación, usted acepta nuestros ** y **. Por lo tanto, debe asegurarse de leerlos detenidamente antes de usar la aplicación.</string>
+
+    <!-- Permission Explain-->
+    <string name="post_notification_rationale">%1$s necesita permiso de notificación para poder publicar notificaciones y realizar algunas funciones relacionadas.</string>
+    <string name="post_notification_from_setting">Permita el permiso de notificación desde la configuración.</string>
+    <!-- Permission Explain-->
+
+    <string name="default_language_system">Sistema</string>
+
+</resources>

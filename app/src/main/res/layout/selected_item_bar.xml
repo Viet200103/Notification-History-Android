@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selection_bar_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?colorPrimary"
+    android:orientation="horizontal"
+    app:layout_collapseMode="pin"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selection_bar_close_button"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:foreground="?android:attr/actionBarItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorOnPrimary" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/selection_bar_count_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/page_title_text_size_2"
+        android:textStyle="bold"
+        tools:text="0 selected" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selection_bar_delete_button"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:foreground="?android:attr/actionBarItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorOnPrimary" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

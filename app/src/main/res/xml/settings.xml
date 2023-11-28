@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pre_general"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:key="pre_general_total_saved"
+            android:summary="-"
+            android:title="@string/pre_general_total_notification"
+            app:iconSpaceReserved="false">
+
+        </androidx.preference.Preference>
+
+
+        <androidx.preference.Preference
+            android:key="pre_general_language"
+            android:title="@string/pre_general_language"
+            app:iconSpaceReserved="false"
+            tools:summary="-" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="pre_screen_capture"
+            android:summary="@string/pre_screen_capture_summary"
+            android:title="@string/pre_screen_capture"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="pre_notification_permission"
+            android:summary="@string/pre_listener_status_disabled"
+            android:title="@string/notification_permission"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pre_notification_log"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:key="pre_listener_status"
+            android:summary="@string/pre_listener_status_disabled"
+            android:title="@string/pre_listener_status"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS" />
+
+        </androidx.preference.Preference>
+
+        <androidx.preference.Preference
+            android:key="pre_battery_whitelist"
+            android:summary="@string/pre_listener_status_disabled"
+            android:title="@string/pre_battery_optimization"
+            app:iconSpaceReserved="false"/>
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="pre_keep_alive"
+            android:summary="@string/pre_keep_alive_summary"
+            android:title="@string/pre_keep_alive"
+            app:iconSpaceReserved="false"/>
+
+        <androidx.preference.Preference
+            android:key="pre_log_ongoing"
+            android:summary="@string/pre_log_ongoing_summary"
+            android:title="@string/pre_log_ongoing"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/pre_privacy"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="pre_setup_passcode"
+            android:summary="@string/pre_privacy_setup_passcode_summary"
+            android:title="@string/pre_privacy_setup_passcode"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="pre_enable_fingerprint"
+            android:summary="@string/pre_privacy_fingerprint_summary"
+            android:title="@string/pre_privacy_fingerprint"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/other_settings"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
+
+        <androidx.preference.Preference
+            android:key="pre_other_translate_language"
+            android:title="@string/pre_translate_language"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="" />
+
+        </androidx.preference.Preference>
+
+
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>
